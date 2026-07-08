@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "check-links": "node scripts/check-links.mjs",
+    "download-images": "node scripts/download-images.mjs",
     "seo-qa": "node scripts/seo-qa.mjs",
     "deploy": "npm run build && wrangler deploy",
     "pages:deploy": "npm run build && wrangler pages deploy out --project-name=kiel-shore-excursions"

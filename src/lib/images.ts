@@ -7,35 +7,35 @@ const B = "/images";
 
 export const siteImages = {
   hero: {
-    src: "https://images.unsplash.com/photo-1596436889106-be35e843f974?w=1600&q=80",
-    alt: "Kiel harbour and cruise ships on the Baltic Sea",
+    src: `${B}/hero-home.jpg`,
+    alt: "Cruise ship at Kiel Ostseekai harbour on the Baltic Sea",
   },
   ogDefault: {
-    src: "https://images.unsplash.com/photo-1565008576549-57569a49371d?w=1200&q=80",
-    alt: "Kiel fjord and Baltic coast — Kiel shore excursion planning",
+    src: `${B}/og-default.jpg`,
+    alt: "Kiel Ostseekai cruise terminal and harbour — Kiel shore excursion planning",
   },
   logo: {
     src: `${B}/logo-mark.svg`,
     alt: "Kiel Shore Excursions",
   },
   port: {
-    src: "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=1200&q=80",
-    alt: "Cruise terminal at Kiel Ostseekai on the Baltic Sea",
+    src: `${B}/cruise-port.jpg`,
+    alt: "Kiel Ostseekai cruise terminal on the Baltic Sea",
   },
 } as const;
 
 export const subjectImages: Record<string, SiteImage> = {
-  kiel: { src: "https://images.unsplash.com/photo-1596436889106-be35e843f974?w=1200&q=80", alt: "Kiel city centre and harbour on the Baltic" },
-  hamburg: { src: "https://images.unsplash.com/photo-1565008576549-57569a49371d?w=1200&q=80", alt: "Hamburg harbour and Speicherstadt warehouses" },
-  lubeck: { src: "https://images.unsplash.com/photo-1587330979470-3595ac045ab0?w=1200&q=80", alt: "Holstentor gate in historic Lübeck old town" },
-  canal: { src: "https://images.unsplash.com/photo-1544551763-77a415ccc9fde?w=1200&q=80", alt: "Ship passing through the Kiel Canal" },
-  fjord: { src: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80", alt: "Scenic Kiel fjord and Baltic coastline" },
-  food: { src: "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=1200&q=80", alt: "German food and beer in northern Germany" },
-  family: { src: "https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=1200&q=80", alt: "Family-friendly day ashore in Kiel" },
-  planner: { src: "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=1200&q=80", alt: "Planning a Kiel cruise port day" },
-  highlights: { src: "https://images.unsplash.com/photo-1596436889106-be35e843f974?w=1200&q=80", alt: "Kiel shore excursion highlights" },
-  "port-day": { src: "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=1200&q=80", alt: "Planning your Kiel port day by ship schedule" },
-  comparison: { src: "https://images.unsplash.com/photo-1587330979470-3595ac045ab0?w=1200&q=80", alt: "Comparing Kiel, Hamburg and Lübeck for cruise passengers" },
+  kiel: { src: `${B}/kiel.jpg`, alt: "Kiel harbour and cruise ships at Ostseekai" },
+  hamburg: { src: `${B}/hamburg.jpg`, alt: "Hamburg Speicherstadt warehouses and harbour at dusk" },
+  lubeck: { src: `${B}/lubeck.jpg`, alt: "Holstentor gate in historic Lübeck old town" },
+  canal: { src: `${B}/canal.jpg`, alt: "Kiel-Holtenau locks on the Nord-Ostsee-Kanal" },
+  fjord: { src: `${B}/fjord.jpg`, alt: "Aerial view of the Kiel Canal locks at Holtenau" },
+  food: { src: `${B}/food.jpg`, alt: "Pretzels with mustard and beer — northern German food culture" },
+  family: { src: `${B}/family.jpg`, alt: "Cruise ship at Kiel harbour — family-friendly port day" },
+  planner: { src: `${B}/planner.jpg`, alt: "Planning a Kiel cruise port day at Ostseekai" },
+  highlights: { src: `${B}/highlights.jpg`, alt: "Kiel Canal locks — Kiel shore excursion highlights" },
+  "port-day": { src: `${B}/cruise-port.jpg`, alt: "Planning your Kiel port day by ship schedule" },
+  comparison: { src: `${B}/comparison.jpg`, alt: "Comparing Kiel, Hamburg and Lübeck for cruise passengers" },
 };
 
 function pick(key: string): SiteImage {
